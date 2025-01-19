@@ -1,0 +1,112 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+  }
+  
+  /* Listing container */
+  .listing-container {
+    max-width:100%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height:80%;
+  }
+  
+  /* Section header */
+  h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+ 
+  /* Listing details */
+  .listing-details {
+    margin-bottom: 20px;
+  }
+  
+  .listing-item {
+    margin-bottom: 15px;
+    display:flex;
+    flex-direction: row;
+  }
+  
+/* Image styling */
+.listing-item img {
+  display:flex;
+  flex-direction: row;
+  max-width: 100%;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+
+  .listing-item strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .listing-item p {
+    margin: 0;
+    color: #444;
+  }
+  
+  
+  /* Sticky actions */
+  .actions {
+    position: sticky; /* Makes the element sticky */
+    top: 0; /* Sticks to the top of the viewport */
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+  }
+  
+  /* Button styling */
+  .edit-button,
+  .delete-button {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .edit-button {
+    background-color: #007BFF;
+  }
+  
+  .edit-button:hover {
+    background-color: #2d65a0;
+    color:rgb(249, 244, 244);
+  }
+  
+  .delete-button {
+    background-color: #DC3545;
+  }
+  
+  .delete-button:hover {
+    background-color: #af323e;
+    color:rgb(235, 223, 223);
+  }
+  
+  /* Delete button in a form */
+  .delete-form {
+    margin: 0;
+  }
+  

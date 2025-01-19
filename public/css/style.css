@@ -1,0 +1,205 @@
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.navbar{
+    height:5rem;
+    background-color: #fff;
+}
+.fa-compass{
+    color:#fe424d;
+    font-size:2rem;
+}
+.nav-link{
+    color:#222222 !important;
+}
+.nav-link:hover{
+    color:#fe424d !important;
+}
+
+/*Footer*/
+.f-info-links a {
+    color:#222222;
+    text-decoration:none;
+    margin-right:1rem;
+}
+
+.f-info-links a:hover{
+    color:#fe424d;
+    text-decoration:underline;
+}
+
+.f-info-links, 
+    .f-info-social,
+        .f-info-brand{
+    width:100%;
+    vertical-align: middle;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.f-info-social i{
+    margin-right:1rem;
+    font-size:1.2rem;
+    margin-right:3rem;
+}
+
+.f-info{
+    text-align:center;
+    height:8rem;
+    display:flex;
+    background-color:whitesmoke;
+    flex-wrap:wrap;
+}
+/*Cards*/
+
+/* Container for Listings */
+.listing-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    background-color: #e4dcdc;
+}
+
+/* Individual Listing Item */
+.listing-item {
+    margin: 15px;
+}
+
+/* Card Styling */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    color:#222222;
+    background-color: #ede7e7;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom:10px;
+    opacity:0;
+}
+.card-title:hover .card-title{
+    color:#fe424d;
+    opacity:0.2;
+}
+.card-text {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.card-description {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Links */
+.listing-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .card {
+        width: 18rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        width: 100%;
+    }
+}
+
+h2 {
+    text-align: center;
+    color: #555;
+}
+
+/* Form container styling */
+.form-container {
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Input and Textarea */
+.form-input, .form-textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.form-textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+/* Submit Button */
+.submit-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}
+
+h2 {
+    text-align: center;
+    color: #555;
+}

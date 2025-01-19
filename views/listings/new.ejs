@@ -1,0 +1,44 @@
+<% layout("/layouts/boilerplate") %>
+<body>
+    <div class="form-container">
+        <h2>Create a new listing</h2>
+        <form method="POST" action="/listings" class="listing-form" novalidate class="needs-validation">
+                <div class="form-group">
+                    <label for="image">Image URL:</label>
+                    <input id="image" name="listing[image]" placeholder="Enter image/URL" type="text" class="form-input" required/>
+                    <div class="invalid-feedback">
+                        Please enter a valid image URL.</div>
+                </div>
+                <div class="form-group">
+                    <label for="title">Title:</label>
+                    <input id="title" name="listing[title]" placeholder="Enter title" type="text" class="form-input" required/>
+                <div class="valid-feedback">
+                        Looks good!</div>
+                </div>
+            
+            <div class="form-group">
+                <label for="description">Description:</label>
+                <textarea id="description" name="listing[description]" placeholder="Enter description" class="form-textarea" required></textarea>
+                <div class="valid-feedback">
+                    Looks good!</div>
+            </div>
+
+            <div class="form-group">
+                <label for="price">Price:</label>
+                <input id="price" name="listing[price]" placeholder="Enter price" type="text" class="form-input" required/>
+                <div class="valid-feedback">
+                    Looks good!</div>
+            </div>
+
+            <div class="form-group">
+                <label for="location">Location:</label>
+                <input id="location" name="listing[location]" placeholder="Enter location" type="text" class="form-input" required/>
+                <div class="valid-feedback">
+                    Looks good!</div>
+            </div>
+            
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+    </div>
+</body>
+    
