@@ -7,6 +7,8 @@ const methodOverride = require("method-override");
 const mongo_url = "mongodb://127.0.0.1:27017/wanderlust"
 const ejsMate = require("ejs-mate");
 //const expressLayouts = require("express-ejs-layouts");
+const {ListingSchema} = require("./schema.js")
+const wrapAsync = require("./utils/wrapAsync.js");
 
 main().then(() =>{
     console.log("connected to db");
@@ -51,11 +53,13 @@ app.get("/listings/:id",async (req,res) =>{
 });
 
 //create route 
-app.post("/listings", async (req,res)=>{
+app.post("/listings", wrapAsync(async (req,res)=>{
+    let result = ListingSchema.validate(req.body);
+    console.log(result);
     const heyListing = new Listing(req.body.listing);
     await heyListing.save();
     res.redirect("/listings");
-});
+}));
 
 //update: Edit & Update route
 
@@ -81,9 +85,15 @@ let {id} = req.params;
  res.redirect("/listings");
 }));
 
+app.all("*",(err,req,res,next)=>{
+    next(new ExpressError(404,"Page not found"));
+});
+
 app.use((err,req,res,next)=>{
-    res.send("Page not found");
-})
+    console.log("error is here in expresserror");
+    let {Statuscode,message} = err;
+    res.status(Statuscode).send(message);
+});
 
 app.listen(8080,()=>{
     console.log("server is listening");
