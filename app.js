@@ -4,10 +4,10 @@ const mongoose = require("mongoose");
 const Listing = require("./models/listing.js");
 const path = require("path");
 const methodOverride = require("method-override");
-const mongo_url = "mongodb://127.0.0.1:27017/wanderlust"
+const mongo_url = "mongodb://127.0.0.1:27017/wanderlust";
 const ejsMate = require("ejs-mate");
 //const expressLayouts = require("express-ejs-layouts");
-const {ListingSchema} = require("./schema.js")
+const {ListingSchema} = require("./schema.js");
 const wrapAsync = require("./utils/wrapAsync.js");
 
 main().then(() =>{
@@ -62,7 +62,6 @@ app.post("/listings", wrapAsync(async (req,res)=>{
 }));
 
 //update: Edit & Update route
-
 app.get("/listings/:id/edit",async (req,res) =>{
     let {id} = req.params;
     const listing = await Listing.findById(id);
@@ -90,7 +89,7 @@ app.all("*",(err,req,res,next)=>{
 });
 
 app.use((err,req,res,next)=>{
-    console.log("error is here in expresserror");
+    console.log("error is here in express error");
     let {Statuscode,message} = err;
     res.status(Statuscode).send(message);
 });

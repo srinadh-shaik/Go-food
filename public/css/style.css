@@ -2,36 +2,36 @@
 /* General Styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
+    background-color: #e8e8e9;
     margin: 0;
     padding: 0;
-    color: #333;
+    color: #040f0f;
 }
 
 .navbar{
     height:5rem;
-    background-color: #fff;
+    background-color: #e8e8e9;
 }
 .fa-compass{
-    color:#fe424d;
+    color:#289944;
     font-size:2rem;
 }
 .nav-link{
-    color:#222222 !important;
+    color:#040f0f !important;
 }
 .nav-link:hover{
-    color:#fe424d !important;
+    color:#289944 !important;
 }
 
 /*Footer*/
 .f-info-links a {
-    color:#222222;
+    color:#040f0f;
     text-decoration:none;
     margin-right:1rem;
 }
 
 .f-info-links a:hover{
-    color:#fe424d;
+    color:#289944;
     text-decoration:underline;
 }
 
@@ -55,11 +55,15 @@ body {
     text-align:center;
     height:8rem;
     display:flex;
-    background-color:whitesmoke;
-    flex-wrap:wrap;
+    background-color:#e8e8e9;
+    flex-wrap:nowrap;
+    position:relative;
+    bottom: -120%;
+    left:0;
+    width:100%;
 }
-/*Cards*/
 
+/*Cards*/
 /* Container for Listings */
 .listing-container {
     display: flex;
@@ -68,7 +72,7 @@ body {
     list-style: none;
     padding: 0;
     margin: 20px auto;
-    background-color: #e4dcdc;
+    background-color: #e8e8e9;
 }
 
 /* Individual Listing Item */
@@ -84,7 +88,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
     color:#222222;
-    background-color: #ede7e7;
+    background-color: #e8e8e9;
 }
 
 .card:hover {
@@ -96,7 +100,7 @@ body {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #e8e8e9;
 }
 
 .card-body {
@@ -151,7 +155,7 @@ h2 {
     width: 80%;
     margin: 30px auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: #e8e8e9;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -187,8 +191,8 @@ h2 {
 .submit-button {
     width: 100%;
     padding: 12px;
-    background-color: #4CAF50;
-    color: white;
+    background-color: #289944;
+    color: #040f0f;
     border: none;
     border-radius: 4px;
     font-size: 16px;
@@ -196,10 +200,10 @@ h2 {
 }
 
 .submit-button:hover {
-    background-color: #45a049;
+    background-color: #289944;
 }
 
 h2 {
     text-align: center;
-    color: #555;
+    color: #040f0f;
 }

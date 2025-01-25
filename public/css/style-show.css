@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
+    background-color: #e8e8e9;
   }
   
   /* Listing container */
@@ -11,7 +11,7 @@ body {
     max-width:100%;
     margin: 20px auto;
     padding: 20px;
-    background-color: #ffffff;
+    background-color: #e8e8e9;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     height:80%;
@@ -20,7 +20,7 @@ body {
   /* Section header */
   h2 {
     font-size: 24px;
-    color: #333;
+    color: #040f0f;
     margin-bottom: 20px;
   }
  
@@ -48,12 +48,12 @@ body {
   .listing-item strong {
     display: block;
     margin-bottom: 5px;
-    color: #555;
+    color: #040f0f;
   }
   
   .listing-item p {
     margin: 0;
-    color: #444;
+    color: #040f0f;
   }
   
   
@@ -61,7 +61,7 @@ body {
   .actions {
     position: sticky; /* Makes the element sticky */
     top: 0; /* Sticks to the top of the viewport */
-    background-color: #ffffff;
+    background-color: #e8e8e9;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -80,7 +80,7 @@ body {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    color: #ffffff;
+    color: black;
     text-align: center;
     display: inline-block;
     cursor: pointer;
@@ -88,11 +88,11 @@ body {
   }
   
   .edit-button {
-    background-color: #007BFF;
+    background-color: #e8e8e9;
   }
   
   .edit-button:hover {
-    background-color: #2d65a0;
+    background-color: green;
     color:rgb(249, 244, 244);
   }
   
@@ -101,7 +101,7 @@ body {
   }
   
   .delete-button:hover {
-    background-color: #af323e;
+    background-color: red;
     color:rgb(235, 223, 223);
   }
   
